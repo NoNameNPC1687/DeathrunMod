@@ -22,7 +22,7 @@ DRI_MODE = Режим
 DRI_TIMELEFT = Осталось: %02d:%02d
 DRI_ALIVECT = Живых КТ: %d/%d
 DRI_ALL_PLAYERS = Всего игроков: %d/%d
-DRI_HEALTH = Health: %d
+DRI_HEALTH = Здоровье: %d
 DRI_SPECLIST = Игрок: %s^nHealth: %dHP, Деньги: $%d, FPS: %d
 DRI_SPEEDOMETER = Скорость: %3.2f
 
