@@ -151,7 +151,7 @@ public Task_ShowInfo()
             }
             iLen += formatex(szInformer[iLen], charsmax(szInformer) - iLen, "%L^n", id, "DRI_TIMELEFT", iTimeLeft / 60, iTimeLeft % 60);
             iLen += formatex(szInformer[iLen], charsmax(szInformer) - iLen, "%L^n", id, "DRI_ALIVECT", iAlive, iCount);
-            iLen += formatex(szInformer[iLen], charsmax(szInformer) - iLen, "%L", id, "DRI_ALL_PLAYERS", g_iConnectedCount, g_iMaxPlayers);
+            iLen += formatex(szInformer[iLen], charsmax(szInformer) - iLen, "%L", id, "DRI_ALL_PLAYERS", get_playersnum(), g_iMaxPlayers);
             
             set_hudmessage(55, 245, 55, 0.02, 0.18, 0, _, UPDATE_INTERVAL, _, _, 3);
             ShowSyncHudMsg(id, g_iHudInformer, szInformer);
