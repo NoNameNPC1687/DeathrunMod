@@ -187,7 +187,7 @@ public Task_ShowInfo()
             get_user_name(id, szName, charsmax(szName));
             for(new player = 1; player < g_iMaxPlayers; player++) {
                 if(g_bSpecList[player] && bShowInfo[player]) {
-                    formatex(szSpecInfo, charsmax(szSpecInfo), "%L^n", player, "DRI_SPECLIST", szName, g_iHealth[id], g_iMoney[id], g_iPlayerFps[id]);
+                    formatex(szSpecInfo, charsmax(szSpecInfo), "%L^n", player, "DRI_SPECLIST", szName[id], g_iHealth[id], g_iMoney[id], g_iPlayerFps[id]);
                     
                     set_hudmessage(245, 245, 245, 0.70, 0.15, 0, _, UPDATE_INTERVAL, _, _, 3);
                     ShowSyncHudMsg(player, g_iHudSpecList, "%s%s", szSpecInfo, szSpecList);
